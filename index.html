@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Layout With Grid CSS</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reponsive.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">VỪA CODE VỪA XÀM</a></li>
+                <li><a href="#">LẬP TRÌNH WEB</a></li>
+                <li><a href="#">ABOUT ME</a></li>
+            </ul>
+            <div class="site-nav-right">
+                <div class="social-links">
+                    <a class="social-link social-link-fb" href="https://www.facebook.com/thanhlongdev/" title="Facebook"
+                        target="_blank" rel="noopener"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0zm5.204 4.911h-3.546c-2.103 0-4.443.885-4.443 3.934.01 1.062 0 2.08 0 3.225h-2.433v3.872h2.509v11.147h4.61v-11.22h3.042l.275-3.81h-3.397s.007-1.695 0-2.187c0-1.205 1.253-1.136 1.329-1.136h2.054V4.911z">
+                            </path>
+                        </svg></a>
+                </div>
+                <a class="rss-button" href="https://feedly.com/i/subscription/feed/https://www.thanhlongdev.com/rss/"
+                    title="RSS" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24">
+                        <circle cx="6.18" cy="17.82" r="2.18"></circle>
+                        <path
+                            d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z">
+                        </path>
+                    </svg>
+                </a>
+
+            </div>
+        </nav>
+        <div class="content-header">
+            <h1 class="site-title">
+                <img class="site-logo"
+                    src="https://digitalpress.fra1.cdn.digitaloceanspaces.com/4tg23ij/2019/11/Untitled-2.png"
+                    width="100%" alt="Thanh Long Dev">
+            </h1>
+            <h2 class="site-description">Nơi chia sẻ kiến thức về lập trình và cuộc sống</h2>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="m-2">
+        <div class="posts">
+            <div class="posts-columns-1 ">
+                <div class="post-wrapper">
+                    <a href="#" class="img-link">
+                        <img class="img-post"
+                            src="https://digitalpress.fra1.cdn.digitaloceanspaces.com/4tg23ij/2020/09/33.png " alt="">
+                    </a>
+                    <div class="content-post">
+                        <a href="#">
+                            <div class="tag-post">Lập Trình Web</div>
+                            <h2 class="title-post">Hướng Dẫn Xây Dựng Books Store Với NodeJS, Express và MongoDB - Phần
+                                4
+                            </h2>
+                            <p class="desc-post">
+                                Chức Năng Hiển Thị Chi Tiết, Cập Nhật Và Xóa Books Định Nghĩa Và Controller Router Hiển
+                                Thị
+                                Chi
+                                Tiết
+                                Trong Books Mình sẽ nói sơ qua một chút về
+                            </p>
+                        </a>
+                        <div class="author-post">
+                            <a href="#">
+                                <img class="avatar-author"
+                                    src="https://digitalpress.fra1.cdn.digitaloceanspaces.com/4tg23ij/2020/05/IMG_20200331_120727-1.jpg"
+                                    alt="" />
+                            </a>
+                            <div class="content-author">
+                                <div>
+                                    <a href="">Đặng Thanh Long</a>
+                                </div>
+                                <span class="post-card-byline-date"><time datetime="2020-09-12">12 Th09 2020</time>
+                                    <span class="bull">•</span> 13 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="posts-columns-3">
+                <div class="post-wrapper">
+                    <a href="#" class="img-link">
+                        <img class="img-post"
+                            src="https://digitalpress.fra1.cdn.digitaloceanspaces.com/4tg23ij/2020/09/33.png " alt="">
+                    </a>
+                    <div class="content-post">
+                        <a href="#">
+                            <div class="tag-post">Lập Trình Web</div>
+                            <h2 class="title-post">Hướng Dẫn Xây Dựng Books Store Với NodeJS, Express và MongoDB - Phần
+                                4
+                            </h2>
+                            <p class="desc-post">
+                                Chức Năng Hiển Thị Chi Tiết, Cập Nhật Và Xóa Books Định Nghĩa Và Controller Router Hiển
+                                Thị
+                                Chi
+                                Tiết
+                                Trong Books Mình sẽ nói sơ qua một chút về
+                            </p>
+                        </a>
+                        <div class="author-post">
+                            <a href="#">
+                                <img class="avatar-author"
+                                    src="https://digitalpress.fra1.cdn.digitaloceanspaces.com/4tg23ij/2020/05/IMG_20200331_120727-1.jpg"
+                                    alt="" />
+                            </a>
+                            <div class="content-author">
+                                <div>
+                                    <a href="">Đặng Thanh Long</a>
+                                </div>
+                                <span class="post-card-byline-date"><time datetime="2020-09-12">12 Th09 2020</time>
+                                    <span class="bull">•</span> 13 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-wrapper">
+                    <a href="#" class="img-link">
+                        <img class="img-post"
+                            src="https://digitalpress.fra1.cdn.digitaloceanspaces.com/4tg23ij/2020/09/33.png " alt="">
+                    </a>
+                    <div class="content-post">
+                        <a href="#">
+                            <div class="tag-post">Lập Trình Web</div>
+                            <h2 class="title-post">Hướng Dẫn Xây Dựng Books Store Với NodeJS, Express và MongoDB - Phần
+                                4
+                            </h2>
+                            <p class="desc-post">
+                                Chức Năng Hiển Thị Chi Tiết, Cập Nhật Và Xóa Books Định Nghĩa Và Controller Router Hiển
+                                Thị
+                                Chi
+                                Tiết
+                                Trong Books Mình sẽ nói sơ qua một chút về
+                            </p>
+                        </a>
+                        <div class="author-post">
+                            <a href="#">
+                                <img class="avatar-author"
+                                    src="https://digitalpress.fra1.cdn.digitaloceanspaces.com/4tg23ij/2020/05/IMG_20200331_120727-1.jpg"
+                                    alt="" />
+                            </a>
+                            <div class="content-author">
+                                <div>
+                                    <a href="">Đặng Thanh Long</a>
+                                </div>
+                                <span class="post-card-byline-date"><time datetime="2020-09-12">12 Th09 2020</time>
+                                    <span class="bull">•</span> 13 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-wrapper">
+                    <a href="#" class="img-link">
+                        <img class="img-post"
+                            src="https://digitalpress.fra1.cdn.digitaloceanspaces.com/4tg23ij/2020/09/33.png " alt="">
+                    </a>
+                    <div class="content-post">
+                        <a href="#">
+                            <div class="tag-post">Lập Trình Web</div>
+                            <h2 class="title-post">Hướng Dẫn Xây Dựng Books Store Với NodeJS, Express và MongoDB - Phần
+                                4
+                            </h2>
+                            <p class="desc-post">
+                                Chức Năng Hiển Thị Chi Tiết, Cập Nhật Và Xóa Books Định Nghĩa Và Controller Router Hiển
+                                Thị
+                                Chi
+                                Tiết
+                                Trong Books Mình sẽ nói sơ qua một chút về
+                            </p>
+                        </a>
+                        <div class="author-post">
+                            <a href="#">
+                                <img class="avatar-author"
+                                    src="https://digitalpress.fra1.cdn.digitaloceanspaces.com/4tg23ij/2020/05/IMG_20200331_120727-1.jpg"
+                                    alt="" />
+                            </a>
+                            <div class="content-author">
+                                <div>
+                                    <a href="">Đặng Thanh Long</a>
+                                </div>
+                                <span class="post-card-byline-date"><time datetime="2020-09-12">12 Th09 2020</time>
+                                    <span class="bull">•</span> 13 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="posts-columns-2">
+                <div class="post-wrapper">
+                    <a href="#" class="img-link">
+                        <img class="img-post"
+                            src="https://digitalpress.fra1.cdn.digitaloceanspaces.com/4tg23ij/2020/09/33.png " alt="">
+                    </a>
+                    <div class="content-post">
+                        <a href="#">
+                            <div class="tag-post">Lập Trình Web</div>
+                            <h2 class="title-post">Hướng Dẫn Xây Dựng Books Store Với NodeJS, Express và MongoDB - Phần
+                                4
+                            </h2>
+                            <p class="desc-post">
+                                Chức Năng Hiển Thị Chi Tiết, Cập Nhật Và Xóa Books Định Nghĩa Và Controller Router Hiển
+                                Thị
+                                Chi
+                                Tiết
+                                Trong Books Mình sẽ nói sơ qua một chút về
+                            </p>
+                        </a>
+                        <div class="author-post">
+                            <a href="#">
+                                <img class="avatar-author"
+                                    src="https://digitalpress.fra1.cdn.digitaloceanspaces.com/4tg23ij/2020/05/IMG_20200331_120727-1.jpg"
+                                    alt="" />
+                            </a>
+                            <div class="content-author">
+                                <div>
+                                    <a href="">Đặng Thanh Long</a>
+                                </div>
+                                <span class="post-card-byline-date"><time datetime="2020-09-12">12 Th09 2020</time>
+                                    <span class="bull">•</span> 13 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-wrapper">
+                    <a href="#" class="img-link">
+                        <img class="img-post"
+                            src="https://digitalpress.fra1.cdn.digitaloceanspaces.com/4tg23ij/2020/09/33.png " alt="">
+                    </a>
+                    <div class="content-post">
+                        <a href="#">
+                            <div class="tag-post">Lập Trình Web</div>
+                            <h2 class="title-post">Hướng Dẫn Xây Dựng Books Store Với NodeJS, Express và MongoDB - Phần
+                                4
+                            </h2>
+                            <p class="desc-post">
+                                Chức Năng Hiển Thị Chi Tiết, Cập Nhật Và Xóa Books Định Nghĩa Và Controller Router Hiển
+                                Thị
+                                Chi
+                                Tiết
+                                Trong Books Mình sẽ nói sơ qua một chút về
+                            </p>
+                        </a>
+                        <div class="author-post">
+                            <a href="#">
+                                <img class="avatar-author"
+                                    src="https://digitalpress.fra1.cdn.digitaloceanspaces.com/4tg23ij/2020/05/IMG_20200331_120727-1.jpg"
+                                    alt="" />
+                            </a>
+                            <div class="content-author">
+                                <div>
+                                    <a href="">Đặng Thanh Long</a>
+                                </div>
+                                <span class="post-card-byline-date"><time datetime="2020-09-12">12 Th09 2020</time>
+                                    <span class="bull">•</span> 13 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="posts-columns-1">
+                <div class="post-wrapper">
+                    <a href="#" class="img-link">
+                        <img class="img-post"
+                            src="https://digitalpress.fra1.cdn.digitaloceanspaces.com/4tg23ij/2020/09/33.png " alt="">
+                    </a>
+                    <div class="content-post">
+                        <a href="#">
+                            <div class="tag-post">Lập Trình Web</div>
+                            <h2 class="title-post">Hướng Dẫn Xây Dựng Books Store Với NodeJS, Express và MongoDB - Phần
+                                4
+                                </h3>
+                                <p class="desc-post">
+                                    Chức Năng Hiển Thị Chi Tiết, Cập Nhật Và Xóa Books Định Nghĩa Và Controller Router
+                                    Hiển
+                                    Thị
+                                    Chi
+                                    Tiết
+                                    Trong Books Mình sẽ nói sơ qua một chút về
+                                </p>
+                        </a>
+                        <div class="author-post">
+                            <a href="#">
+                                <img class="avatar-author"
+                                    src="https://digitalpress.fra1.cdn.digitaloceanspaces.com/4tg23ij/2020/05/IMG_20200331_120727-1.jpg"
+                                    alt="" />
+                            </a>
+                            <div class="content-author">
+                                <div>
+                                    <a href="">Đặng Thanh Long</a>
+                                </div>
+                                <span class="post-card-byline-date">
+                                    <time datetime="2020-09-12">12 Th09 2020</time>
+                                    <span class="bull">•</span> 13 min read
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer outer">
+        <div class="site-footer-content posts">
+            <section class="copyright"><a href="https://www.thanhlongdev.com">Thanh Long Dev</a> © 2020</section>
+            <div class="site-footer-nav">
+                <a href="https://www.thanhlongdev.com">Latest Posts</a>
+                <a href="https://www.facebook.com/thanhlongdev/" target="_blank" rel="noopener">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
