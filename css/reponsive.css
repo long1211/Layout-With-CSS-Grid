@@ -67,6 +67,7 @@
 
     /* Footer */
     .site-footer-content {
-        flex-direction: column;
+        grid-template-columns: none;
+        justify-items: center;
     }
 }

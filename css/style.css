@@ -102,7 +102,7 @@ nav {
     opacity: 1;
 }
 
-.content-header {
+.banner-header {
     z-index: 100;
     display: flex;
     flex-direction: column;
@@ -113,7 +113,7 @@ nav {
     max-height: 340px;
 }
 
-.content-header .site-description {
+.banner-header .site-description {
     text-align: center;
     font-weight: 500;
     padding: 5px 0;
@@ -241,7 +241,7 @@ hr {
 /* Footer */
 .site-footer {
     position: relative;
-    padding: 2rem 0 3rem;
+    padding: 2rem 2rem 3rem;
     background: #0a0b0c;
 }
 
@@ -256,15 +256,14 @@ section {
 }
 
 .site-footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     font-size: .8rem;
 }
 
 .site-footer-nav {
     display: flex;
+    justify-content: flex-end;
 }
 
 .site-footer-nav a:last-child {
