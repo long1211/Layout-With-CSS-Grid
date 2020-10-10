@@ -5,7 +5,6 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-ul,
 li {
     list-style: none;
 }
@@ -17,23 +16,25 @@ a {
 
 /* header */
 header {
-    background: #0a0b0c no-repeat 50%;
-    background-size: cover;
+    background: #0a0b0c;
     padding: 0 5vw;
     color: #fff;
 }
 
+/* Navbar */
 nav {
     margin: 0 auto;
     max-width: 1040px;
     width: 100%;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .menu {
     padding-top: .5rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, .2fr);
+    justify-items: center;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
@@ -56,19 +57,13 @@ nav {
     padding: .5rem;
 }
 
+/* Nav right */
 .site-nav-right {
-    flex: 0 1 auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 12fr 1fr;
     padding: 10px 0;
     height: 64px;
-}
-
-.social-links {
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
+    justify-items: right;
 }
 
 .social-link {
@@ -102,11 +97,10 @@ nav {
     opacity: 1;
 }
 
+/* Banner */
 .banner-header {
-    z-index: 100;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    justify-items: center;
     align-items: center;
     padding: 6vw 3vw;
     min-height: 200px;
@@ -124,11 +118,10 @@ nav {
 
 /* Main */
 main {
-    position: relative;
     padding: 0 5vw;
 }
 
-.m-2 {
+.margin-main {
     margin: 2.5rem 0 6rem;
 }
 
@@ -161,12 +154,11 @@ hr {
 }
 
 .posts-columns-1 .post-wrapper {
-    display: flex;
-
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
-.posts-columns-1 .post-wrapper .content-post {
-    width: 35%;
+.posts-columns-1 .content-post {
     padding: 1.5rem 0 1.5rem 2rem;
 }
 
@@ -240,7 +232,6 @@ hr {
 
 /* Footer */
 .site-footer {
-    position: relative;
     padding: 2rem 2rem 3rem;
     background: #0a0b0c;
 }
@@ -262,8 +253,9 @@ section {
 }
 
 .site-footer-nav {
-    display: flex;
-    justify-content: flex-end;
+    display: grid;
+    justify-items: right;
+    grid-template-columns: 12fr 1fr;
 }
 
 .site-footer-nav a:last-child {
